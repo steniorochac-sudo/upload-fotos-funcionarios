@@ -107,7 +107,7 @@
         };
 
         try {
-          const response = await fetch('URL_DO_APPS_SCRIPT', { // Substitua pelo URL do Google Apps Script
+          const response = await fetch('https://script.google.com/macros/s/AKfycbzk-7Lw1BhwMqprTF1t5syl_XgFzMaHp0vkAeD5dj2V93jQsC9CBHjda9cEb_gh_BPoOQ/exec', { // Substitua pelo URL do Google Apps Script
             method: 'POST',
             body: JSON.stringify(data),
             headers: { 'Content-Type': 'application/json' }
