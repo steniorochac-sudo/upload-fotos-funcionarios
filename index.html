@@ -68,11 +68,11 @@
         };
 
         try {
-          const response = await fetch('https://cors-proxy-vercel-unea.vercel.app/https://script.google.com/macros/s/AKfycbynMTOyj6FnKFP41y0TF6UOLc-xJQ_nbRL45qoNyrNTHPIlxLIIyR0yG_xu_O0GVEYI_w/exec', {
-            method: 'POST',
-            body: JSON.stringify(data),
-            headers: { 'Content-Type': 'application/json' }
-          });
+        const response = await fetch('https://cors-proxy-vercel-unea.vercel.app/https://script.google.com/macros/s/AKfycbynMTOyj6FnKFP41y0TF6UOLc-xJQ_nbRL45qoNyrNTHPIlxLIIyR0yG_xu_O0GVEYI_w/exec', {
+          method: 'POST',
+          body: JSON.stringify(data),
+          headers: { 'Content-Type': 'application/json' }
+        });
           const result = await response.json();
 
           if (result.status === 'success') {
